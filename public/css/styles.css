@@ -1,0 +1,398 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    margin: auto;
+}
+
+p {
+    font-size: 12px;
+}
+
+
+/*///////////////////////////////   HEADER   ///////////////////////////////*/
+.main-header {
+    width: 100%;
+    height: 160px;
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-top{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.logo {
+    padding-right: 10px;
+    width: 50%;
+}
+
+.searchbox {
+    width: 50%;
+    background-color: white ;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: #ebebeb solid 1px;
+    border-radius: 7px;
+}
+
+.searchbox input {
+    width: 90%;
+    border: none;
+}
+
+.lupa {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    padding-left: 5px;
+    border-left: #ebebeb solid 2px;
+    color: #666;
+}
+
+.header-subtitle {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.nav {
+    display: none;
+}
+
+div.burger-menu {
+    background: #03264C;
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+section.banner img{
+    width: 100%;
+    margin-top: 160px;
+}
+
+/*///////////////////////////////   MAIN   ///////////////////////////////*/
+.main {
+    margin: auto;
+    max-width: 90vw;
+}
+
+.tit {
+    text-align: left;
+    font-size: 24px;
+    color: #666;
+    font-weight: bold;
+}
+
+section.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article.product {
+    margin: 10px;
+}
+
+article img {
+    width: 100%;
+}
+
+div.product-info {
+    border-top: 1px solid #ebebeb; 
+    background-color: white;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.price {
+    font-size: 18px;
+    width: 30%;
+}
+
+p.discount {
+    font-size: 16px;
+    width: 70%;
+    color: #39b54a;
+}
+
+article div p.descr {
+    display: none;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+main section article div i {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: 1s;
+}
+
+/*///////////////////////////////   REGISTER FORM   ///////////////////////////////*/
+.register-form{
+    max-width: 500px;
+    padding: 20px 50px;
+    margin: auto;
+    margin-top: 160px;
+}
+
+.form-item{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-item label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;    
+}
+
+.inputbox {
+    width: 100%;
+    padding: 5px;
+    border: #ebebeb solid 1px;
+    border-radius: 7px;
+}
+
+form div.register-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form div.register-buttons button {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+/*///////////////////////////////   LOGIN FORM   ///////////////////////////////*/
+.login-form{
+    max-width: 500px;
+    padding: 20px 50px;
+    margin: auto;
+    margin-top: 160px;
+}
+
+.form-item{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-item label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;    
+}
+
+.inputbox {
+    width: 100%;
+    padding: 5px;
+    border: #ebebeb solid 1px;
+    border-radius: 7px;
+}
+
+form div.login-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form div.login-buttons button {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+/*///////////////////////////////   FOOTER   ///////////////////////////////*/
+.footer {
+    background-color: white;
+    padding: 10px;
+}
+
+footer section article {
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright {
+    padding-top: 20px;
+}
+
+footer section article i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px; 
+}
+
+
+/*///////////////////////////////   TABLET   ///////////////////////////////*/
+
+@media (min-width: 361px){
+    .main-header {
+        height: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    div.logo {
+        width: 30%;
+    }
+
+    .searchbox {
+        width: 30%;
+        background-color: white ;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        border: #ebebeb solid 1px;
+        border-radius: 7px;
+    }
+
+    .header-subtitle {
+        width: 30%;
+        text-align: end;
+        padding: 15px 0;
+        font-size: 10px;
+    }    
+
+    div.burger-menu {
+        display: none;
+    }
+
+    nav.nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-end;
+    }
+
+    nav.nav ul {
+        list-style: none;
+        width: 50%;
+        display: flex;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    nav ul.nav-right {
+        justify-content: right;
+    }
+
+    nav.nav ul li a{
+        padding: 0 5px;
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    nav.nav ul li i {
+        padding-left: 2px;
+    }
+
+    main section article div p.descr {
+        display: block;
+    }
+
+    main section article.product {
+        max-width: 43%;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+}
+
+/*///////////////////////////////   DESKTOP   ///////////////////////////////*/
+
+@media (min-width: 769px){
+
+    .header-subtitle {
+        text-align: center;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    nav.nav ul {
+        font-size: 12px;
+    }
+    
+    nav.nav ul li {
+        margin: 0 10px;
+    }
+
+    main section article.product {
+        max-width: 22%;
+        box-shadow: none
+    }
+
+    main section article.product:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    main section article div p.descr {
+        display: none;
+    }
+
+    main section article.product:hover p.descr {
+        display: block;
+    }
+
+    main section article.product:hover div i {
+        transform: rotate(-90deg);
+    }
+
+    form div.login-buttons button:hover {
+        background-color: #0022AA;
+    }
+
+    footer section article i:hover {
+        color: #39b54a;
+    }
+
+    footer section {
+        display: flex;
+    }
+
+}
