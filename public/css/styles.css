@@ -63,7 +63,7 @@ div.logo {
     color: #666;
 }
 
-.header-subtitle {
+h2.header-subtitle {
     width: 100%;
     text-align: center;
     padding: 15px;
@@ -288,7 +288,7 @@ footer section article i {
         border-radius: 7px;
     }
 
-    .header-subtitle {
+    h2.header-subtitle {
         width: 30%;
         text-align: end;
         padding: 15px 0;
@@ -344,10 +344,14 @@ footer section article i {
 
 @media (min-width: 769px){
 
-    .header-subtitle {
+    h2.header-subtitle {
         text-align: center;
         padding: 15px;
         font-size: 12px;
+    }
+
+    h2.header-subtitle i {
+        margin-right: 2px;
     }
 
     .nav {
