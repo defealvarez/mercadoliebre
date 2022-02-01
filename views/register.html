@@ -59,7 +59,11 @@
             </div>
             <div class="form-item">
                 <label>Nombre de usuari@:</label>
-                <input type="text" name="nombre-usuario" placeholder="(sin espacios)" class="inputbox">
+                <input type="text" name="nombre-usuario" placeholder="Sin espacios y un minimo de 8 caracteres" class="inputbox" pattern="[A-Za-z]" minlength="4" title="Sin espacios y un minimo de 8 caracteres">
+            </div>
+            <div class="form-item">
+                <label>E-mail:</label>
+                <input type="email" name="email" placeholder="ej: jose@gmail.com" class="inputbox">
             </div>
             <div class="form-item">
                 <label>Fecha de nacimiento:</label>
